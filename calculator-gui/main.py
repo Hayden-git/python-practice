@@ -3,7 +3,10 @@ import tkinter as tk
 caclulation = ""
 
 def add_to_calculation(symbol):
-    pass
+    global caclulation
+    caclulation += str(symbol)
+    text_result.delete(1.0, "end")
+    text_result.insert(1.0, caclulation)
 
 def evaluate_calculation():
     pass
